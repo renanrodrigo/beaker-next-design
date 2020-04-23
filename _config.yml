@@ -1,5 +1,6 @@
 title: Beaker-Next Design
-theme: "just-the-docs"
+remote_theme: "pmarsceill/just-the-docs"
+baseurl: "/beaker-next-design/"
 aux_links:
   "GitHub repo":
     - "//github.com/beaker-project/beaker-next-design"
