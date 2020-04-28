@@ -3,7 +3,6 @@ title: Beaker-Next Design
 remote_theme: "pmarsceill/just-the-docs"
 # Used in standalone version
 theme: "just-the-docs"
-baseurl: "/beaker-next-design/"
 aux_links:
   "GitHub repo":
     - "//github.com/beaker-project/beaker-next-design"
