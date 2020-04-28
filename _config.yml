@@ -1,5 +1,8 @@
 title: Beaker-Next Design
+# Used by GitHub Pages
 remote_theme: "pmarsceill/just-the-docs"
+# Used in standalone version
+theme: "just-the-docs"
 baseurl: "/beaker-next-design/"
 aux_links:
   "GitHub repo":
