@@ -48,3 +48,23 @@ The recent activity table has 4 fields:
 - Action: Description of the activity and its effects
 
 ![](img/system_details_general.png)
+
+## System details - Power Options
+
+When a user clicks "Power Options" in the horizontal menu, all the information and configuration related to power is
+shown in the screen. 
+
+The "Power Control" card will tell if the system power can be controlled remotely and will have buttons to power the
+system on and off, reboot it, interrupt and clear netboot.
+
+A table with the 5 most recent power commands is also shown. There is a button for the user to see all of the power
+history for the machine. The table has 4 fields:
+- Trigger: identifies how the power command was issued
+- Action: the command itself
+- Status: Current status of the command with corresponding timestamp
+- Message (optional): message returned by the command call, if any
+
+The "Power Settings" card will let the user set the power configuration for the system, as address, protocol, ID, username,
+password, etc.
+
+![](img/system_details_power.png)
