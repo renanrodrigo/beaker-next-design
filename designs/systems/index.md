@@ -68,3 +68,17 @@ The "Power Settings" card will let the user set the power configuration for the 
 password, etc.
 
 ![](img/system_details_power.png)
+
+## System details - Permissions
+
+When the "Permissions" option is selected in the horizontal menu, a card is shown with the specific permissions for the
+machine. There are two main options: apply the policy according to a previously defined pool or apply a custom policy.
+
+If the custom policy is selected, a default group called "Everyone" is created. More users and/or groups may be added
+by clicking an "Add" button.
+
+For every user / group defined in the policy, all specific permissions will be shown with checkboxes. Marking a checkbox
+grants the permission and unmarking it removes the permission. Clicking the trash can icon for a user / group removes it
+from the policy.
+
+![](img/system_details_permissions.png)
