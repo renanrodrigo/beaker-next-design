@@ -31,7 +31,7 @@ Clicking the 'x' in the top-right corner of the screen sends the user back to th
 A horizontal submenu groups all of the configuration and information for the system by subject.
 
 The first details screen has the general information about the system. It contains 5 cards:
-- Ownership: informs who is the owner for this system and if is there any active loan. Also has buttons for borrowing
+- Loan: informs who is the owner for this system and if is there any active loan. Also has buttons for borrowing
 the system or lending it to someone, given the current user has the proper permissions to do so.
 - Operational Status: has the current status for this system and the amount of aborted recipes in the past week. Also has
 a "Report Problem" button, allowing the current user to inform the machine owner of any problem that may have happened.
@@ -48,6 +48,32 @@ The recent activity table has 4 fields:
 - Action: Description of the activity and its effects
 
 ![](img/system_details_general.png)
+
+## System details - System Settings
+
+When a user clicks "System Settings" in the horizontal menu, the main settings for the machine are presented. Settings
+can be changed if the current user has permissions to do so.
+
+The System Metadata card has options to edit the system name and labels such as description, location and lender.
+
+The Ownership card has the username of the system owner and a button to change the owner. Right after there is an editable
+list of users, besides the owner, who get notifications for this system.
+
+The Pools card has a list of pools this system belongs to, with a button to edit the list.
+
+The Excluded Families card has only one button, leading to the Excluded Families configuration (if done the way it is
+today, doesnt fit in a card.)
+
+The main Beaker Settings can be defined in the appropriate card. Type and architecture of the system can be defined there,
+as well as the Kernel type if it is an ARM system. It also has the Lab Controller the system is attached to. 
+
+There is a Condition dropdown which defines the current status for this system (Automated, Manual or Broken). If the status
+for a system is changed, the user needs to write down why it is changing. The text and timestamp will be displayed as the
+Last Condition Report. Beaker itself can change this status and update this text.
+
+The last card is Remove from Beaker. It has a button to completely remove the system from Beaker.
+
+![](img/system_details_settings.png)
 
 ## System details - Power Options
 
@@ -69,21 +95,7 @@ password, etc.
 
 ![](img/system_details_power.png)
 
-## System details - Permissions
-
-When the "Permissions" option is selected in the horizontal menu, a card is shown with the specific permissions for the
-machine. There are two main options: apply the policy according to a previously defined pool or apply a custom policy.
-
-If the custom policy is selected, a default group called "Everyone" is created. More users and/or groups may be added
-by clicking an "Add" button.
-
-For every user / group defined in the policy, all specific permissions will be shown with checkboxes. Marking a checkbox
-grants the permission and unmarking it removes the permission. Clicking the trash can icon for a user / group removes it
-from the policy.
-
-![](img/system_details_permissions.png)
-
-## System details - provisioning
+## System details - Provisioning
 
 When the "Provisioning" option is selected in the horizontal menu, there will be two cards in the screen.
 
@@ -97,3 +109,17 @@ to create customized sets of options for specific families and / or architecture
 afterwards. Clicking the trash can icon for a set of options excludes it.
 
 ![](img/system_details_provision.png)
+
+## System details - Permissions
+
+When the "Permissions" option is selected in the horizontal menu, a card is shown with the specific permissions for the
+machine. There are two main options: apply the policy according to a previously defined pool or apply a custom policy.
+
+If the custom policy is selected, a default group called "Everyone" is created. More users and/or groups may be added
+by clicking an "Add" button.
+
+For every user / group defined in the policy, all specific permissions will be shown with checkboxes. Marking a checkbox
+grants the permission and unmarking it removes the permission. Clicking the trash can icon for a user / group removes it
+from the policy.
+
+![](img/system_details_permissions.png)
