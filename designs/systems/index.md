@@ -82,3 +82,18 @@ grants the permission and unmarking it removes the permission. Clicking the tras
 from the policy.
 
 ![](img/system_details_permissions.png)
+
+## System details - provisioning
+
+When the "Provisioning" option is selected in the horizontal menu, there will be two cards in the screen.
+
+One of the cards will have the options to provision the system with a specific distro from the library. The user will be
+able to select the family, tag, distro and tree as well as a set of Install Options to provision the system. A checkbox
+may be selected to reboot the system.
+
+Install Options can be defined in the second card. The "default" set of options will always be available, for all families
+and architectures, with specific KS metadata and Kernel options for the installation. The user may click the "Add" button
+to create customized sets of options for specific families and / or architectures supported by the system, and edit them
+afterwards. Clicking the trash can icon for a set of options excludes it.
+
+![](img/system_details_provision.png)
