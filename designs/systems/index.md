@@ -15,7 +15,8 @@ The table contains 10 results per page. There are navigation commands which can 
 There is a filter bar which can be used to search for specific systems by name. Other filtering options will be available
 through "Advanced Search".
 
-The table contains 5 fields:
+The table contains 6 fields:
+- Status: current status for this system in the scheduler: (A)utomatic, (M)anual or (B)roken
 - Name: name of the system in Beaker, with the machine vendor and model
 - Architecture: architecture(s) supported in this system
 - Owner: user who owns the system in Beaker
@@ -42,9 +43,9 @@ for the system.
 which allows the user to see all the activity for the system.
 
 The recent activity table has 4 fields:
-- User: name of the user who triggered / executed the activity
-- Service: shows through which service (command line, web interface) the activity was created
 - Date / Time: timestamp for the activity
+- Service: shows through which service (command line, web interface) the activity was created
+- User: name of the user who triggered / executed the activity
 - Action: Description of the activity and its effects
 
 ![](img/system_details_general.png)
@@ -64,8 +65,9 @@ The Pools card has a list of pools this system belongs to, with a button to edit
 The Excluded Families card has only one button, leading to the Excluded Families configuration (if done the way it is
 today, doesnt fit in a card.)
 
-The main Beaker Settings can be defined in the appropriate card. Type and architecture of the system can be defined there,
-as well as the Kernel type if it is an ARM system. It also has the Lab Controller the system is attached to. 
+The main Beaker Settings can be defined in the appropriate card. Type and architectures supported by the system can be 
+defined there, as well as the Kernel type if it is an ARM system. It also has the Lab Controller the system is attached 
+to. 
 
 There is a Condition dropdown which defines the current status for this system (Automated, Manual or Broken). If the status
 for a system is changed, the user needs to write down why it is changing. The text and timestamp will be displayed as the
@@ -84,10 +86,11 @@ The "Power Control" card will tell if the system power can be controlled remotel
 system on and off, reboot it, interrupt and clear netboot.
 
 A table with the 5 most recent power commands is also shown. There is a button for the user to see all of the power
-history for the machine. The table has 4 fields:
+history for the machine. The table has 5 fields:
+- Date / Time: timestamp for the last status update for this power command
 - Trigger: identifies how the power command was issued
+- Status: Current status of the command
 - Action: the command itself
-- Status: Current status of the command with corresponding timestamp
 - Message (optional): message returned by the command call, if any
 
 The "Power Settings" card will let the user set the power configuration for the system, as address, protocol, ID, username,
